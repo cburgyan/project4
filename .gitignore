@@ -1,5 +1,7 @@
 # Byte-compiled / optimized / DLL files
-skinData
+untitled_project2
+*skinModel*
+skinData*
 __pycache__/
 *.py[cod]
 *$py.class
