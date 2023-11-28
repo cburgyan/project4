@@ -1,4 +1,4 @@
-# HR Analysis – Prediction of Attrition
+# Sticking Together: A Look Into Attrition
 ## Comparison Machine Learning Project
 
 # Contributors
@@ -7,11 +7,23 @@
   •	Christian Cantu<br>
 
 # Sources
-1.	Database Source: https://www.kaggle.com/datasets/anshika2301/hr-analytics-dataset?select=HR_Analytics.csv
-2.	Chat GPT: https://chat.openai.com/
-3.	Stack Overflow: https://stackoverflow.com/
-4.	Scikit-Learn: https://scikit-learn.org/stable/
-5.	Hyperband Tuner: https://keras.io/api/keras_tuner/tuners/hyperband/
+1.	[Database Source](https://www.kaggle.com/datasets/anshika2301/hr-analytics-dataset?select=HR_Analytics.csv)
+2.	[Chat GPT](https://chat.openai.com/)
+3.	[Stack Overflow](https://stackoverflow.com/)
+4.	[Scikit-Learn](https://scikit-learn.org/stable/)
+5.	[Hyperband Tuner](https://keras.io/api/keras_tuner/tuners/hyperband/)
+7.	[Cultermap](https://web.archive.org/web/20230913171706/https://www.cultureamp.com/blog/cost-of-employee-turnover)
+8.	[Investopedia](https://www.investopedia.com/terms/a/attrition.asp)
+
+# Slides
+• [Tableau Workbook](https://public.tableau.com/app/profile/karoly.burgyan/viz/HRBook_17011060285450/Sheet1?publish=yes) <br><br>
+• [Presentation Slides](https://docs.google.com/presentation/d/12RUXDCDHZtxtUFoaoBHiP8SCMSqjNNB0ViUJQJipwIE/edit#slide=id.gd9c453428_0_16)
+
+
+
+
+
+
 
 
 # Overview
