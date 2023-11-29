@@ -25,7 +25,7 @@ In parallel, utilizing a comparison of machine learning models, such as neural n
   2. What prediction models can help increase the likelihood of retention?
 
 ## Slides
-• [Tableau Workbook](https://public.tableau.com/app/profile/karoly.burgyan/viz/HRBook_17011060285450/Sheet1?publish=yes) <br><br>
+• [Tableau Workbook](https://public.tableau.com/app/profile/karoly.burgyan/viz/HRBook_17011060285450/AttritionAtAGlance) <br><br>
 • [Presentation Slides](https://docs.google.com/presentation/d/12RUXDCDHZtxtUFoaoBHiP8SCMSqjNNB0ViUJQJipwIE/edit#slide=id.gd9c453428_0_16)
 
 ## Neural Network Model
