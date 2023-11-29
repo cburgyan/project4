@@ -2582,3 +2582,41 @@
 'np.rand.seed and tf.random.set_seed': 42
 'Optimization Title': Model 4: Dropped EmpID and EmployeeNumber: no outliers: try WITH dropping EmpID and EmployeeNumber and using z-scores (not IQR) that are so high that NO outliers are found (so keeping all rows); "DailyRate" are the only columns with outliers removed; try hyperparameters across thresholds 1000 to 1001 excluding 1001 with max_epoch 10
 }
+{'model_accuracy_WITHOUT_outliers_in_test_data': 0.8939393758773804
+'timestamp': 20231129-050319
+'z_threshold': 1
+'columns to remove outliers from': ['OverTime']
+'model_accuracy_WITH_outliers_in_test_data': 0.8396739363670349
+'number of columns': 56
+'param': {"num_layers": 1, "activation_layer_input": "leaky_relu", "neurons_layer_input": 65, "learning_rate": 0.0002965488058019691, "tuner/epochs": 2, "tuner/initial_epoch": 0, "tuner/bracket": 2, "tuner/round": 0}
+'columns': Index(['Age', 'Attrition', 'DailyRate', 'DistanceFromHome', 'Education',
+       'EnvironmentSatisfaction', 'HourlyRate', 'JobInvolvement', 'JobLevel',
+       'JobSatisfaction', 'MonthlyIncome', 'MonthlyRate', 'NumCompaniesWorked',
+       'OverTime', 'PercentSalaryHike', 'PerformanceRating',
+       'RelationshipSatisfaction', 'StockOptionLevel', 'TotalWorkingYears',
+       'TrainingTimesLastYear', 'WorkLifeBalance', 'YearsAtCompany',
+       'YearsInCurrentRole', 'YearsSinceLastPromotion', 'YearsWithCurrManager',
+       'AgeGroup_18-25', 'AgeGroup_26-35', 'AgeGroup_36-45', 'AgeGroup_46-55',
+       'AgeGroup_55+', 'BusinessTravel_Non-Travel',
+       'BusinessTravel_TravelRarely', 'BusinessTravel_Travel_Frequently',
+       'BusinessTravel_Travel_Rarely', 'Department_Human Resources',
+       'Department_Research & Development', 'Department_Sales',
+       'EducationField_Human Resources', 'EducationField_Life Sciences',
+       'EducationField_bucket_EducationField_0_13',
+       'EducationField_bucket_EducationField_0_22', 'Gender_Female',
+       'Gender_Male', 'JobRole_Manager', 'JobRole_Research Director',
+       'JobRole_Sales Representative', 'JobRole_bucket_JobRole_0_068',
+       'JobRole_bucket_JobRole_0_16', 'JobRole_bucket_JobRole_0_23',
+       'MaritalStatus_Divorced', 'MaritalStatus_Married',
+       'MaritalStatus_Single', 'SalarySlab_10k-15k', 'SalarySlab_15k+',
+       'SalarySlab_5k-10k', 'SalarySlab_Upto 5k'],
+      dtype='object')
+'removed column': 
+'restrict columns to 1.5 * IQR': False
+'number of outlier rows': 416
+'number of rows': 1054
+'max_epoch': 10
+'hyperband seed': 1
+'np.rand.seed and tf.random.set_seed': 42
+'Optimization Title': Model 11: Overtime: And bucketed: try WITH dropping EmpID and EmployeeNumber and using z-scores;"OverTime" are the only columns with outliers removed; try hyperparameters across thresholds 1 to 2 excluding 2 with max_epoch 10
+}
