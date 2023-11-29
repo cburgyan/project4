@@ -2179,3 +2179,291 @@
 'np.rand.seed and tf.random.set_seed': 42
 'Optimization Title': Model 8: SalarySlab Scaling: try scaling "SalarySlab" from string to int64 after removing outliers as defined by unbounded data in the form of "SalarySlab" with a value equal to "15k+"; try WITH dropping EmpID and EmployeeNumber and using z-scores (not IQR) that are so high that NO outliers are found (so keeping all rows); "DailyRate" are the only columns with outliers removed; try hyperparameters across thresholds 1000 to 1001 excluding 1001 with max_epoch 10
 }
+{'model_accuracy_WITHOUT_outliers_in_test_data': 1.0
+'timestamp': 20231128-214333
+'z_threshold': 1000
+'columns to remove outliers from': ['DailyRate', 'DistanceFromHome']
+'model_accuracy_WITH_outliers_in_test_data': 0.44565218687057495
+'number of columns': 1533
+'param': {"num_layers": 1, "activation_layer_input": "leaky_relu", "neurons_layer_input": 1897, "learning_rate": 0.0002965488058019691, "tuner/epochs": 2, "tuner/initial_epoch": 0, "tuner/bracket": 2, "tuner/round": 0}
+'columns': Index(['Age', 'Attrition', 'DailyRate', 'DistanceFromHome', 'Education',
+       'EmployeeNumber', 'EnvironmentSatisfaction', 'HourlyRate',
+       'JobInvolvement', 'JobLevel',
+       ...
+       'JobRole_Sales Representative', 'MaritalStatus_Divorced',
+       'MaritalStatus_Married', 'MaritalStatus_Single', 'SalarySlab_10k-15k',
+       'SalarySlab_15k+', 'SalarySlab_5k-10k', 'SalarySlab_Upto 5k',
+       'OverTime_No', 'OverTime_Yes'],
+      dtype='object', length=1533)
+'removed column': 
+'restrict columns to 1.5 * IQR': True
+'number of outlier rows': 1467
+'number of rows': 3
+'max_epoch': 10
+'hyperband seed': 1
+'np.rand.seed and tf.random.set_seed': 42
+'Optimization Title': Model 1: Using 1.5*IQR: try WITHOUT dropping EmpID and EmployeeNumber and use 1.5 * IQR outlier restrictions; "['DailyRate', 'DistanceFromHome']" are the only columns with outliers removed; try hyperparameters across thresholds 1000 to 1001 excluding 1001 with max_epoch 10
+}
+{'model_accuracy_WITHOUT_outliers_in_test_data': 0.8396739363670349
+'timestamp': 20231128-220042
+'z_threshold': 1000
+'columns to remove outliers from': ['DailyRate', 'DistanceFromHome']
+'model_accuracy_WITH_outliers_in_test_data': 0.8396739363670349
+'number of columns': 1533
+'param': {"num_layers": 1, "activation_layer_input": "leaky_relu", "neurons_layer_input": 1897, "learning_rate": 0.0002965488058019691, "tuner/epochs": 2, "tuner/initial_epoch": 0, "tuner/bracket": 2, "tuner/round": 0}
+'columns': Index(['Age', 'Attrition', 'DailyRate', 'DistanceFromHome', 'Education',
+       'EmployeeNumber', 'EnvironmentSatisfaction', 'HourlyRate',
+       'JobInvolvement', 'JobLevel',
+       ...
+       'JobRole_Sales Representative', 'MaritalStatus_Divorced',
+       'MaritalStatus_Married', 'MaritalStatus_Single', 'SalarySlab_10k-15k',
+       'SalarySlab_15k+', 'SalarySlab_5k-10k', 'SalarySlab_Upto 5k',
+       'OverTime_No', 'OverTime_Yes'],
+      dtype='object', length=1533)
+'removed column': 
+'restrict columns to 1.5 * IQR': False
+'number of outlier rows': 0
+'number of rows': 1470
+'max_epoch': 10
+'hyperband seed': 1
+'np.rand.seed and tf.random.set_seed': 42
+'Optimization Title': Model 2: Using no outliers: try WITHOUT dropping EmpID and EmployeeNumber and using z-scores (not IQR) that are so high that NO outliers are found (so keeping all rows); "['DailyRate', 'DistanceFromHome']" are the only columns with outliers removed; try hyperparameters across thresholds 1000 to 1001 excluding 1001 with max_epoch 10
+}
+{'model_accuracy_WITHOUT_outliers_in_test_data': 1.0
+'timestamp': 20231128-222335
+'z_threshold': 1
+'columns to remove outliers from': ['Age', 'DailyRate', 'DistanceFromHome', 'EnvironmentSatisfaction', 'JobInvolvement', 'NumCompaniesWorked', 'PercentSalaryHike', 'RelationshipSatisfaction', 'TotalWorkingYears', 'TrainingTimesLastYear', 'WorkLifeBalance', 'YearsInCurrentRole']
+'model_accuracy_WITH_outliers_in_test_data': 0.4211956560611725
+'number of columns': 62
+'param': {"num_layers": 3, "activation_layer_input": "tanh", "neurons_layer_input": 86, "learning_rate": 0.0008894905887153519, "activation_layer_1": "relu", "neurons_layer_1": 14, "activation_layer_2": "leaky_relu", "neurons_layer_2": 45, "activation_layer_3": "leaky_relu", "neurons_layer_3": 23, "tuner/epochs": 2, "tuner/initial_epoch": 0, "tuner/bracket": 2, "tuner/round": 0}
+'columns': Index(['Age', 'Attrition', 'DailyRate', 'DistanceFromHome', 'Education',
+       'EnvironmentSatisfaction', 'HourlyRate', 'JobInvolvement', 'JobLevel',
+       'JobSatisfaction', 'MonthlyIncome', 'MonthlyRate', 'NumCompaniesWorked',
+       'PercentSalaryHike', 'PerformanceRating', 'RelationshipSatisfaction',
+       'StockOptionLevel', 'TotalWorkingYears', 'TrainingTimesLastYear',
+       'WorkLifeBalance', 'YearsAtCompany', 'YearsInCurrentRole',
+       'YearsSinceLastPromotion', 'YearsWithCurrManager', 'AgeGroup_18-25',
+       'AgeGroup_26-35', 'AgeGroup_36-45', 'AgeGroup_46-55', 'AgeGroup_55+',
+       'BusinessTravel_Non-Travel', 'BusinessTravel_TravelRarely',
+       'BusinessTravel_Travel_Frequently', 'BusinessTravel_Travel_Rarely',
+       'Department_Human Resources', 'Department_Research & Development',
+       'Department_Sales', 'EducationField_Human Resources',
+       'EducationField_Life Sciences', 'EducationField_Marketing',
+       'EducationField_Medical', 'EducationField_Other',
+       'EducationField_Technical Degree', 'Gender_Female', 'Gender_Male',
+       'JobRole_Healthcare Representative', 'JobRole_Human Resources',
+       'JobRole_Laboratory Technician', 'JobRole_Manager',
+       'JobRole_Manufacturing Director', 'JobRole_Research Director',
+       'JobRole_Research Scientist', 'JobRole_Sales Executive',
+       'JobRole_Sales Representative', 'MaritalStatus_Divorced',
+       'MaritalStatus_Married', 'MaritalStatus_Single', 'SalarySlab_10k-15k',
+       'SalarySlab_15k+', 'SalarySlab_5k-10k', 'SalarySlab_Upto 5k',
+       'OverTime_No', 'OverTime_Yes'],
+      dtype='object')
+'removed column': 
+'restrict columns to 1.5 * IQR': False
+'number of outlier rows': 1463
+'number of rows': 7
+'max_epoch': 10
+'hyperband seed': 1
+'np.rand.seed and tf.random.set_seed': 42
+'Optimization Title': Model 4.Z-Series-RESULT: Use z-score-threshold 1 Only on increased-accuracy-columns: try removing outliers as defined by unbounded data in the form of "SalarySlab" with a value equal to "15k+"; try WITH dropping EmpID and EmployeeNumber and using 1.5 * IQR Rule to remove outliers; "['Age', 'DailyRate', 'DistanceFromHome', 'EnvironmentSatisfaction', 'JobInvolvement', 'NumCompaniesWorked', 'PercentSalaryHike', 'RelationshipSatisfaction', 'TotalWorkingYears', 'TrainingTimesLastYear', 'WorkLifeBalance', 'YearsInCurrentRole']" are the only columns with outliers removed; try hyperparameters across thresholds 1 to 2 excluding 2 with max_epoch 10
+}
+{'model_accuracy_WITHOUT_outliers_in_test_data': 0.8928571343421936
+'timestamp': 20231128-223548
+'z_threshold': 1
+'columns to remove outliers from': ['Age', 'EnvironmentSatisfaction', 'JobInvolvement', 'TotalWorkingYears', 'WorkLifeBalance', 'YearsInCurrentRole']
+'model_accuracy_WITH_outliers_in_test_data': 0.8396739363670349
+'number of columns': 62
+'param': {"num_layers": 1, "activation_layer_input": "leaky_relu", "neurons_layer_input": 76, "learning_rate": 0.0002965488058019691, "tuner/epochs": 2, "tuner/initial_epoch": 0, "tuner/bracket": 2, "tuner/round": 0}
+'columns': Index(['Age', 'Attrition', 'DailyRate', 'DistanceFromHome', 'Education',
+       'EnvironmentSatisfaction', 'HourlyRate', 'JobInvolvement', 'JobLevel',
+       'JobSatisfaction', 'MonthlyIncome', 'MonthlyRate', 'NumCompaniesWorked',
+       'PercentSalaryHike', 'PerformanceRating', 'RelationshipSatisfaction',
+       'StockOptionLevel', 'TotalWorkingYears', 'TrainingTimesLastYear',
+       'WorkLifeBalance', 'YearsAtCompany', 'YearsInCurrentRole',
+       'YearsSinceLastPromotion', 'YearsWithCurrManager', 'AgeGroup_18-25',
+       'AgeGroup_26-35', 'AgeGroup_36-45', 'AgeGroup_46-55', 'AgeGroup_55+',
+       'BusinessTravel_Non-Travel', 'BusinessTravel_TravelRarely',
+       'BusinessTravel_Travel_Frequently', 'BusinessTravel_Travel_Rarely',
+       'Department_Human Resources', 'Department_Research & Development',
+       'Department_Sales', 'EducationField_Human Resources',
+       'EducationField_Life Sciences', 'EducationField_Marketing',
+       'EducationField_Medical', 'EducationField_Other',
+       'EducationField_Technical Degree', 'Gender_Female', 'Gender_Male',
+       'JobRole_Healthcare Representative', 'JobRole_Human Resources',
+       'JobRole_Laboratory Technician', 'JobRole_Manager',
+       'JobRole_Manufacturing Director', 'JobRole_Research Director',
+       'JobRole_Research Scientist', 'JobRole_Sales Executive',
+       'JobRole_Sales Representative', 'MaritalStatus_Divorced',
+       'MaritalStatus_Married', 'MaritalStatus_Single', 'SalarySlab_10k-15k',
+       'SalarySlab_15k+', 'SalarySlab_5k-10k', 'SalarySlab_Upto 5k',
+       'OverTime_No', 'OverTime_Yes'],
+      dtype='object')
+'removed column': 
+'restrict columns to 1.5 * IQR': False
+'number of outlier rows': 1360
+'number of rows': 110
+'max_epoch': 10
+'hyperband seed': 1
+'np.rand.seed and tf.random.set_seed': 42
+'Optimization Title': Model 4.Z-Series-RESULT2-85%-Z-Score-1: Use z-score-threshold 1 Only on increased-accuracy-columns of 85+%: try removing outliers as defined by unbounded data in the form of "SalarySlab" with a value equal to "15k+"; try WITH dropping EmpID and EmployeeNumber and using 1.5 * IQR Rule to remove outliers; "['Age', 'EnvironmentSatisfaction', 'JobInvolvement', 'TotalWorkingYears', 'WorkLifeBalance', 'YearsInCurrentRole']" are the only columns with outliers removed; try hyperparameters across thresholds 1 to 2 excluding 2 with max_epoch 10
+}
+{'model_accuracy_WITHOUT_outliers_in_test_data': 0.892307698726654
+'timestamp': 20231128-224823
+'z_threshold': 1
+'columns to remove outliers from': ['EnvironmentSatisfaction', 'JobInvolvement', 'WorkLifeBalance']
+'model_accuracy_WITH_outliers_in_test_data': 0.8396739363670349
+'number of columns': 62
+'param': {"num_layers": 1, "activation_layer_input": "leaky_relu", "neurons_layer_input": 76, "learning_rate": 0.0002965488058019691, "tuner/epochs": 2, "tuner/initial_epoch": 0, "tuner/bracket": 2, "tuner/round": 0}
+'columns': Index(['Age', 'Attrition', 'DailyRate', 'DistanceFromHome', 'Education',
+       'EnvironmentSatisfaction', 'HourlyRate', 'JobInvolvement', 'JobLevel',
+       'JobSatisfaction', 'MonthlyIncome', 'MonthlyRate', 'NumCompaniesWorked',
+       'PercentSalaryHike', 'PerformanceRating', 'RelationshipSatisfaction',
+       'StockOptionLevel', 'TotalWorkingYears', 'TrainingTimesLastYear',
+       'WorkLifeBalance', 'YearsAtCompany', 'YearsInCurrentRole',
+       'YearsSinceLastPromotion', 'YearsWithCurrManager', 'AgeGroup_18-25',
+       'AgeGroup_26-35', 'AgeGroup_36-45', 'AgeGroup_46-55', 'AgeGroup_55+',
+       'BusinessTravel_Non-Travel', 'BusinessTravel_TravelRarely',
+       'BusinessTravel_Travel_Frequently', 'BusinessTravel_Travel_Rarely',
+       'Department_Human Resources', 'Department_Research & Development',
+       'Department_Sales', 'EducationField_Human Resources',
+       'EducationField_Life Sciences', 'EducationField_Marketing',
+       'EducationField_Medical', 'EducationField_Other',
+       'EducationField_Technical Degree', 'Gender_Female', 'Gender_Male',
+       'JobRole_Healthcare Representative', 'JobRole_Human Resources',
+       'JobRole_Laboratory Technician', 'JobRole_Manager',
+       'JobRole_Manufacturing Director', 'JobRole_Research Director',
+       'JobRole_Research Scientist', 'JobRole_Sales Executive',
+       'JobRole_Sales Representative', 'MaritalStatus_Divorced',
+       'MaritalStatus_Married', 'MaritalStatus_Single', 'SalarySlab_10k-15k',
+       'SalarySlab_15k+', 'SalarySlab_5k-10k', 'SalarySlab_Upto 5k',
+       'OverTime_No', 'OverTime_Yes'],
+      dtype='object')
+'removed column': 
+'restrict columns to 1.5 * IQR': False
+'number of outlier rows': 1211
+'number of rows': 259
+'max_epoch': 10
+'hyperband seed': 1
+'np.rand.seed and tf.random.set_seed': 42
+'Optimization Title': Model 4.Z-Series-RESULT3-85%.5-Z-Score-1: Use z-score-threshold 1 Only on increased-accuracy-columns of 85.5+%: try removing outliers as defined by unbounded data in the form of "SalarySlab" with a value equal to "15k+"; try WITH dropping EmpID and EmployeeNumber and using 1.5 * IQR Rule to remove outliers; "['EnvironmentSatisfaction', 'JobInvolvement', 'WorkLifeBalance']" are the only columns with outliers removed; try hyperparameters across thresholds 1 to 2 excluding 2 with max_epoch 10
+}
+{'model_accuracy_WITHOUT_outliers_in_test_data': 1.0
+'timestamp': 20231128-235745
+'z_threshold': 1000
+'columns to remove outliers from': ['DailyRate', 'DistanceFromHome']
+'model_accuracy_WITH_outliers_in_test_data': 0.8396739363670349
+'number of columns': 62
+'param': {"num_layers": 4, "activation_layer_input": "leaky_relu", "neurons_layer_input": 81, "learning_rate": 0.00028406107009737317, "tuner/epochs": 2, "tuner/initial_epoch": 0, "tuner/bracket": 2, "tuner/round": 0, "activation_layer_1": "relu", "neurons_layer_1": 2, "activation_layer_2": "relu", "neurons_layer_2": 2, "activation_layer_3": "relu", "neurons_layer_3": 2}
+'columns': Index(['Age', 'Attrition', 'DailyRate', 'DistanceFromHome', 'Education',
+       'EnvironmentSatisfaction', 'HourlyRate', 'JobInvolvement', 'JobLevel',
+       'JobSatisfaction', 'MonthlyIncome', 'MonthlyRate', 'NumCompaniesWorked',
+       'PercentSalaryHike', 'PerformanceRating', 'RelationshipSatisfaction',
+       'StockOptionLevel', 'TotalWorkingYears', 'TrainingTimesLastYear',
+       'WorkLifeBalance', 'YearsAtCompany', 'YearsInCurrentRole',
+       'YearsSinceLastPromotion', 'YearsWithCurrManager', 'AgeGroup_18-25',
+       'AgeGroup_26-35', 'AgeGroup_36-45', 'AgeGroup_46-55', 'AgeGroup_55+',
+       'BusinessTravel_Non-Travel', 'BusinessTravel_TravelRarely',
+       'BusinessTravel_Travel_Frequently', 'BusinessTravel_Travel_Rarely',
+       'Department_Human Resources', 'Department_Research & Development',
+       'Department_Sales', 'EducationField_Human Resources',
+       'EducationField_Life Sciences', 'EducationField_Marketing',
+       'EducationField_Medical', 'EducationField_Other',
+       'EducationField_Technical Degree', 'Gender_Female', 'Gender_Male',
+       'JobRole_Healthcare Representative', 'JobRole_Human Resources',
+       'JobRole_Laboratory Technician', 'JobRole_Manager',
+       'JobRole_Manufacturing Director', 'JobRole_Research Director',
+       'JobRole_Research Scientist', 'JobRole_Sales Executive',
+       'JobRole_Sales Representative', 'MaritalStatus_Divorced',
+       'MaritalStatus_Married', 'MaritalStatus_Single', 'SalarySlab_10k-15k',
+       'SalarySlab_15k+', 'SalarySlab_5k-10k', 'SalarySlab_Upto 5k',
+       'OverTime_No', 'OverTime_Yes'],
+      dtype='object')
+'removed column': 
+'restrict columns to 1.5 * IQR': True
+'number of outlier rows': 1395
+'number of rows': 75
+'max_epoch': 10
+'hyperband seed': 1
+'np.rand.seed and tf.random.set_seed': 42
+'Optimization Title': Model 3: Dropped EmpID and EmployeeNumber, Use 1.5 * IQR Rule: try WITH dropping EmpID and EmployeeNumber and use 1.5 * IQR outlier restrictions; "['DailyRate', 'DistanceFromHome']" are the only columns with outliers removed; try hyperparameters across thresholds 1000 to 1001 excluding 1001 with max_epoch 10
+}
+{'model_accuracy_WITHOUT_outliers_in_test_data': 1.0
+'timestamp': 20231129-004539
+'z_threshold': 1000
+'columns to remove outliers from': [['DailyRate', 'DistanceFromHome']]
+'model_accuracy_WITH_outliers_in_test_data': did not run with outliers included
+'number of columns': 58
+'param': {"num_layers": 5, "activation_layer_input": "leaky_relu", "neurons_layer_input": 62, "learning_rate": 0.008249331566936491, "activation_layer_1": "leaky_relu", "neurons_layer_1": 82, "activation_layer_2": "relu", "neurons_layer_2": 86, "activation_layer_3": "leaky_relu", "neurons_layer_3": 14, "tuner/epochs": 2, "tuner/initial_epoch": 0, "tuner/bracket": 2, "tuner/round": 0, "activation_layer_4": "relu", "neurons_layer_4": 2}
+'columns': Index(['Age', 'Attrition', 'DailyRate', 'DistanceFromHome', 'Education',
+       'EnvironmentSatisfaction', 'HourlyRate', 'JobInvolvement', 'JobLevel',
+       'JobSatisfaction', 'MonthlyIncome', 'MonthlyRate', 'NumCompaniesWorked',
+       'PercentSalaryHike', 'PerformanceRating', 'RelationshipSatisfaction',
+       'StockOptionLevel', 'TotalWorkingYears', 'TrainingTimesLastYear',
+       'WorkLifeBalance', 'YearsAtCompany', 'YearsInCurrentRole',
+       'YearsSinceLastPromotion', 'YearsWithCurrManager', 'AgeGroup_18-25',
+       'AgeGroup_26-35', 'AgeGroup_36-45', 'AgeGroup_46-55', 'AgeGroup_55+',
+       'BusinessTravel_Non-Travel', 'BusinessTravel_TravelRarely',
+       'BusinessTravel_Travel_Frequently', 'BusinessTravel_Travel_Rarely',
+       'Department_Human Resources', 'Department_Research & Development',
+       'Department_Sales', 'EducationField_Human Resources',
+       'EducationField_Medical', 'EducationField_Other',
+       'EducationField_bucket_EducationField_0_14',
+       'EducationField_bucket_EducationField_0_22', 'Gender_Female',
+       'Gender_Male', 'JobRole_Manager', 'JobRole_Research Director',
+       'JobRole_Sales Representative', 'JobRole_bucket_JobRole_0_068',
+       'JobRole_bucket_JobRole_0_16', 'JobRole_bucket_JobRole_0_23',
+       'MaritalStatus_Divorced', 'MaritalStatus_Married',
+       'MaritalStatus_Single', 'SalarySlab_10k-15k', 'SalarySlab_15k+',
+       'SalarySlab_5k-10k', 'SalarySlab_Upto 5k', 'OverTime_No',
+       'OverTime_Yes'],
+      dtype='object')
+'removed column': 
+'restrict columns to 1.5 * IQR': True
+'number of outlier rows': 1354
+'number of rows': 116
+'max_epoch': 10
+'hyperband seed': 1
+'np.rand.seed and tf.random.set_seed': 42
+'Optimization Title': Model 9: Dropped EmpID and EmployeeNumber, Use 1.5 * IQR Rule: try bucketing the average value of Attrition in association with a value of the columns of JobRole and EducationField (-- thereby, reducing the number of input/features) in order to reduce the learning complexity of the neural network(these two columns were selected b/c they had the largest number of distinct values from amongst thethe columns that were categorical instead of numberical); try WITH dropping EmpID and EmployeeNumber and using 1.5 * IQR Rule to remove outliers; "['DailyRate', 'DistanceFromHome']" are the only columns with outliers removed; try hyperparameters across thresholds 1000 to 1001 excluding 1001 with max_epoch 10
+}
+{'model_accuracy_WITHOUT_outliers_in_test_data': 0.8396739363670349
+'timestamp': 20231129-005319
+'z_threshold': 1000
+'columns to remove outliers from': ['DailyRate', 'DistanceFromHome']
+'model_accuracy_WITH_outliers_in_test_data': did not run with outliers included
+'number of columns': 58
+'param': {"num_layers": 1, "activation_layer_input": "leaky_relu", "neurons_layer_input": 67, "learning_rate": 0.0002965488058019691, "tuner/epochs": 2, "tuner/initial_epoch": 0, "tuner/bracket": 2, "tuner/round": 0}
+'columns': Index(['Age', 'Attrition', 'DailyRate', 'DistanceFromHome', 'Education',
+       'EnvironmentSatisfaction', 'HourlyRate', 'JobInvolvement', 'JobLevel',
+       'JobSatisfaction', 'MonthlyIncome', 'MonthlyRate', 'NumCompaniesWorked',
+       'PercentSalaryHike', 'PerformanceRating', 'RelationshipSatisfaction',
+       'StockOptionLevel', 'TotalWorkingYears', 'TrainingTimesLastYear',
+       'WorkLifeBalance', 'YearsAtCompany', 'YearsInCurrentRole',
+       'YearsSinceLastPromotion', 'YearsWithCurrManager', 'AgeGroup_18-25',
+       'AgeGroup_26-35', 'AgeGroup_36-45', 'AgeGroup_46-55', 'AgeGroup_55+',
+       'BusinessTravel_Non-Travel', 'BusinessTravel_TravelRarely',
+       'BusinessTravel_Travel_Frequently', 'BusinessTravel_Travel_Rarely',
+       'Department_Human Resources', 'Department_Research & Development',
+       'Department_Sales', 'EducationField_Human Resources',
+       'EducationField_Medical', 'EducationField_Other',
+       'EducationField_bucket_EducationField_0_14',
+       'EducationField_bucket_EducationField_0_22', 'Gender_Female',
+       'Gender_Male', 'JobRole_Manager', 'JobRole_Research Director',
+       'JobRole_Sales Representative', 'JobRole_bucket_JobRole_0_068',
+       'JobRole_bucket_JobRole_0_16', 'JobRole_bucket_JobRole_0_23',
+       'MaritalStatus_Divorced', 'MaritalStatus_Married',
+       'MaritalStatus_Single', 'SalarySlab_10k-15k', 'SalarySlab_15k+',
+       'SalarySlab_5k-10k', 'SalarySlab_Upto 5k', 'OverTime_No',
+       'OverTime_Yes'],
+      dtype='object')
+'removed column': 
+'restrict columns to 1.5 * IQR': False
+'number of outlier rows': 0
+'number of rows': 1470
+'max_epoch': 10
+'hyperband seed': 1
+'np.rand.seed and tf.random.set_seed': 42
+'Optimization Title': Model 10: Dropped EmpID and EmployeeNumber, Use 1.5 * IQR Rule: try bucketing the average value of Attrition in association with a value of the columns of JobRole and EducationField (-- thereby, reducing the number of input/features) in order to reduce the learning complexity of the neural network;(these two columns were selected b/c they had the largest number of distinct values from amongst thethe columns that were categorical instead of numberical); try WITH dropping EmpID and EmployeeNumber and using z-scores (not IQR) that are so high that NO outliers are found (so keeping all rows); "['DailyRate', 'DistanceFromHome']" are the only columns with outliers removed; try hyperparameters across thresholds 1000 to 1001 excluding 1001 with max_epoch 10
+}
