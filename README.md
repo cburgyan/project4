@@ -20,13 +20,23 @@
 HR analytics, commonly known as people analytics, workforce analytics, or talent analytics, involves the aggregation, analysis, and presentation of HR data. It encompasses the collection and application of talent-related information to enhance key talent and business outcomes. This practice enables your organization to evaluate the impact of various HR metrics on overall business performance, fostering data-driven decision-making. Professionals in this field are primarily responsible for interpreting and analyzing extensive datasets.<br>
 In parallel, utilizing a comparison of machine learning models, such as neural networks, random forests, support vectors, and logistical regression, is explored to accurately predict employee resignations(attrition) from their respective roles. This comparison aims to leverage advanced analytical tools for a more insightful understanding of workforce dynamics.<br>
 
+[Presentation Slides](https://docs.google.com/presentation/d/12RUXDCDHZtxtUFoaoBHiP8SCMSqjNNB0ViUJQJipwIE/edit#slide=id.gd9c453428_0_16)<br>
+
 ## Questions
-  1. What correlations suggest better retention?
+  1. What correlations suggest better retention?<br><br>
+[Tableau Workbook](https://public.tableau.com/app/profile/shayla.badeaux/viz/HRBook_17012903593280/AttritionAtAGlance?publish=yes) <br><br>
+
+     <img width="350" alt="image" src="https://github.com/cburgyan/project4/assets/134640833/66079fe6-51ce-4e1f-ba11-b047bc0343dd">
+     <img width="280" alt="image" src="https://github.com/cburgyan/project4/assets/134640833/02d977a5-7c34-42a9-8ff3-b0178a5e7dbf"><br>
+
+     <img width="700" alt="image" src="https://github.com/cburgyan/project4/assets/134640833/c396f6a8-e5ac-4cf1-b2e7-b63126daa838"><br>
+     <img width="700" alt="image" src="https://github.com/cburgyan/project4/assets/134640833/b831d668-ccfc-4109-b384-13a7e1ec1235"><br>
+     
   2. What prediction models can help increase the likelihood of retention?
 
-## Slides
-• [Tableau Workbook](https://public.tableau.com/app/profile/shayla.badeaux/viz/HRBook_17012903593280/AttritionAtAGlance?publish=yes) <br><br>
-• [Presentation Slides](https://docs.google.com/presentation/d/12RUXDCDHZtxtUFoaoBHiP8SCMSqjNNB0ViUJQJipwIE/edit#slide=id.gd9c453428_0_16)
+
+
+
 
 ## Neural Network Model
 
