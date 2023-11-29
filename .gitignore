@@ -1,6 +1,7 @@
 # Byte-compiled / optimized / DLL files
-*untitled_project2*
+*untitled_project2/*
 *ExploratoryFiles/*
+*untitled_project/*
 ExploratoryFiles/skinLesionClassificationTarget_Images/skinLesionTarget_Images.ipynb
 ExploratoryFiles/image_processing/exploreImageProcessing.ipynb
 *.h5
