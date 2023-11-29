@@ -97,7 +97,7 @@ Now, let's look at the models.
 <sup>1</sup><sub style='font-size: 10;'> This was the most salient outlier z-score but there were about 300 distinct outlier z-scores tested in the neural network models using a hyperband tuner.</sub>
 
 
-## Question 1: What correlations suggest better retention?
+# Question 1: What correlations suggest better retention?
 
 [Tableau Workbook](https://public.tableau.com/app/profile/shayla.badeaux/viz/HRBook_17012903593280/AttritionAtAGlance?publish=yes) <br><br>
  <img width="350" alt="image" src="https://github.com/cburgyan/project4/assets/134640833/66079fe6-51ce-4e1f-ba11-b047bc0343dd">
@@ -105,7 +105,7 @@ Now, let's look at the models.
      <img width="700" alt="image" src="https://github.com/cburgyan/project4/assets/134640833/c396f6a8-e5ac-4cf1-b2e7-b63126daa838"><br>
      <img width="700" alt="image" src="https://github.com/cburgyan/project4/assets/134640833/b831d668-ccfc-4109-b384-13a7e1ec1235"><br>
      
- ## Question 2: What prediction models can help increase the likelihood of retention?
+ # Question 2: What prediction models can help increase the likelihood of retention?
 In total there were 3 Random Forest Classifier Models, 3 Support Vector Models, 3 Logistic Regression Models, and 98 Neural Network Models created and considered in order to find the highest accuracy. Here, for the sake of brevity, only the top models of each are discussed (See HR_Analysis_RFC_SVM_LogReg.ipynb for details on the other Random Forest Classifier Models, Support Vector Models, and Logistic Regression Models and see HR_Analysis_Neural_Network.ipynb for more details on the other 97 neural network models).
 # Random Forest Classifier Model
 
