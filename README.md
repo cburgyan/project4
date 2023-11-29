@@ -75,7 +75,8 @@ Confusion Matrix:<br>
 
 
 # Conclusions
-Both the Support Vector and Logistic Regression Models had an accuracy of 82%. The Random Forest Model had an accuracy of 83%
+The Support Vector Model2 had the highest accuracy of 88.587% against all 1470 rows compared to Logistic Model3's 88.315%, Support Vector Model3's 88.043%, and Random Forest Classifier Model3's 85.870%, and Nuerual Network Model11's 83.967%. However, when tested against z-score 1 restricted data (in reference to the Overtime column).2 The Logistic Regression Model3 had the highest accuracy of 90.152 against 1054 rows out of 1470 rows3 as compared to Support Vector Model3's 89.394%, Random Forest Classifier Model3's 89.394%, and Neural Network Model's 89.394%.
+So, in summary, of the 100+ models considered4, the Logistic Regression Model3 and Support Vector Model3 are nearly 
 
 
 
