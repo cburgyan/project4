@@ -99,7 +99,11 @@ Now, let's look at the models.
 
 # Question 1: What correlations suggest better retention?
 
+We decided the best way to view any correlations was with the calculations of R-squared of our independent variables(y), against our dependent variable(X), attrition. We also wanted to visually see these factors plotted against attrition and did so using Tableau.<br><br>
+
 [Tableau Workbook](https://public.tableau.com/app/profile/shayla.badeaux/viz/HRBook_17012903593280/AttritionAtAGlance?publish=yes) <br><br>
+<img width="632" alt="image" src="https://github.com/cburgyan/project4/assets/134640833/eff65a87-0779-4ead-aebc-0df521578a6f">
+
  <img width="350" alt="image" src="https://github.com/cburgyan/project4/assets/134640833/66079fe6-51ce-4e1f-ba11-b047bc0343dd">
      <img width="280" alt="image" src="https://github.com/cburgyan/project4/assets/134640833/02d977a5-7c34-42a9-8ff3-b0178a5e7dbf"><br>
      <img width="700" alt="image" src="https://github.com/cburgyan/project4/assets/134640833/c396f6a8-e5ac-4cf1-b2e7-b63126daa838"><br>
