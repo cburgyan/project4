@@ -7,20 +7,25 @@
   •	Christian Cantu<br>
 
 # Sources
-1.	[Database Source](https://www.kaggle.com/datasets/anshika2301/hr-analytics-dataset?select=HR_Analytics.csv)
-2.	[Chat GPT](https://chat.openai.com/)
-3.	[Stack Overflow](https://stackoverflow.com/)
-4.	[Scikit-Learn](https://scikit-learn.org/stable/)
-5.	[Hyperband Tuner](https://keras.io/api/keras_tuner/tuners/hyperband/)
-7.	[Cultermap](https://web.archive.org/web/20230913171706/https://www.cultureamp.com/blog/cost-of-employee-turnover)
-8.	[Investopedia](https://www.investopedia.com/terms/a/attrition.asp)
+<ol>
+<li>	Kaggle. October 2023. https://www.kaggle.com/datasets/anshika2301/hr-analytics-dataset?select=HR_Analytics.csv</li>
+<li>	ChatGPT. https://chat.openai.com/</li>
+<li>	Stack Overflow. https://stackoverflow.com/</li>
+<li>	Scikit-Learn. nd. https://scikit-learn.org/stable/</li>
+<li>	Hyperband Tuner. nd. https://keras.io/api/keras_tuner/tuners/hyperband/</li>
+<li>	Cultermap. August 27, 2021. https://web.archive.org/web/20230913171706/https://www.cultureamp.com/blog/cost-of-employee-turnover</li>
+<li>	Investopedia. August 18, 2023. https://www.investopedia.com/terms/a/attrition.asp</li>
+</ol>
 
+# Presentation And Tableau
+
+
+[Presentation Slides](https://docs.google.com/presentation/d/12RUXDCDHZtxtUFoaoBHiP8SCMSqjNNB0ViUJQJipwIE/edit#slide=id.gd9c453428_0_16)<br>
+[Tableau Workbook](https://public.tableau.com/app/profile/shayla.badeaux/viz/HRBook_17012903593280/AttritionAtAGlance?publish=yes) <br><br>
 
 # Overview
 HR analytics, commonly known as people analytics, workforce analytics, or talent analytics, involves the aggregation, analysis, and presentation of HR data. It encompasses the collection and application of talent-related information to enhance key talent and business outcomes. This practice enables your organization to evaluate the impact of various HR metrics on overall business performance, fostering data-driven decision-making. Professionals in this field are primarily responsible for interpreting and analyzing extensive datasets.<br>
 In parallel, utilizing a comparison of machine learning models, such as neural networks, random forests, support vectors, and logistical regression, is explored to accurately predict employee resignations(attrition) from their respective roles. This comparison aims to leverage advanced analytical tools for a more insightful understanding of workforce dynamics.<br>
-
-[Presentation Slides](https://docs.google.com/presentation/d/12RUXDCDHZtxtUFoaoBHiP8SCMSqjNNB0ViUJQJipwIE/edit#slide=id.gd9c453428_0_16)<br>
 
 
 
@@ -91,7 +96,7 @@ The features for the model were:
 </ul>
 </ul>
 
-Now, let's look at the models.
+Now, let's look at the correlaitons.
 
 
 <sup>1</sup><sub style='font-size: 10;'> This was the most salient outlier z-score but there were about 300 distinct outlier z-scores tested in the neural network models using a hyperband tuner.</sub>
@@ -102,13 +107,16 @@ Now, let's look at the models.
 We decided the best way to view any correlations was with the calculations of R-squared of our independent variables(y), against our dependent variable(X), attrition. We also wanted to visually see these factors plotted against attrition and did so using Tableau.<br><br>
 
 [Tableau Workbook](https://public.tableau.com/app/profile/shayla.badeaux/viz/HRBook_17012903593280/AttritionAtAGlance?publish=yes) <br><br>
-<img width="632" alt="image" src="https://github.com/cburgyan/project4/assets/134640833/eff65a87-0779-4ead-aebc-0df521578a6f">
-
+Below are the features with the highest r-squared values and, as can be seen. The top 3 were 'OverTime', 'MaritalStatus_Single', and 'TotalWorkingYears'.<br><br>
+<img width="632" alt="image" src="https://github.com/cburgyan/project4/assets/134640833/eff65a87-0779-4ead-aebc-0df521578a6f"><br><br>
+Because the 'No' and 'Yes' of OverTime is the highest, we know that the OverTime varies most consistently with the fluctuations of Attrition between 'No' and 'Yes' ('1' and '0' in the converted case). Overtime, MaritalStatus, and TotalWorkingYears are shown in detail below. <br><br>
  <img width="350" alt="image" src="https://github.com/cburgyan/project4/assets/134640833/66079fe6-51ce-4e1f-ba11-b047bc0343dd">
-     <img width="280" alt="image" src="https://github.com/cburgyan/project4/assets/134640833/02d977a5-7c34-42a9-8ff3-b0178a5e7dbf"><br>
-     <img width="700" alt="image" src="https://github.com/cburgyan/project4/assets/134640833/c396f6a8-e5ac-4cf1-b2e7-b63126daa838"><br>
-     <img width="700" alt="image" src="https://github.com/cburgyan/project4/assets/134640833/b831d668-ccfc-4109-b384-13a7e1ec1235"><br>
-     
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="280" alt="image" src="https://github.com/cburgyan/project4/assets/134640833/02d977a5-7c34-42a9-8ff3-b0178a5e7dbf"><br><br>
+     <br>
+  <img src='./HR_analysis/images/totalWorkingYears.png'><br>
+     <br><br>
+  Now, let's look at models for prediction.<br><br>
+
  # Question 2: What prediction models can help increase the likelihood of retention?
 In total there were 3 Random Forest Classifier Models, 3 Support Vector Models, 3 Logistic Regression Models, and 98 Neural Network Models created and considered in order to find the highest accuracy. Here, for the sake of brevity, only the top models of each are discussed (See HR_Analysis_RFC_SVM_LogReg.ipynb for details on the other Random Forest Classifier Models, Support Vector Models, and Logistic Regression Models and see HR_Analysis_Neural_Network.ipynb for more details on the other 97 neural network models).
 # Random Forest Classifier Model
